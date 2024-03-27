@@ -78,7 +78,7 @@ export default function data() {
 
     rows: [
       {
-        companies: <Company name="Patient A Uploaded Heart Rate at 03:00" />,
+        companies: <Company name="Patient B Uploaded Heart Rate at 07:00" />,
 
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
@@ -92,7 +92,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company name="Patient A Uploaded Heart Rate at 02:00" />,
+        companies: <Company name="Patient B Uploaded Heart Rate at 02:00" />,
 
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
@@ -106,20 +106,20 @@ export default function data() {
         ),
       },
       {
-        companies: <Company name="Patient A did not upload heart rate yesterday" />,
+        companies: <Company name="Patient B Uploaded Heart Rate Yesterday" />,
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            Not set
+            72
           </MDTypography>
         ),
         completion: (
           <MDBox width="8rem" textAlign="left">
-            <MDProgress value={0} color="success" variant="gradient" label={false} />
+            <MDProgress value={100} color="success" variant="gradient" label={false} />
           </MDBox>
         ),
       },
       {
-        companies: <Company name="Patient A upload Heart Rate 2 days ago" />,
+        companies: <Company name="Patient B upload Heart Rate 2 days ago" />,
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
             72

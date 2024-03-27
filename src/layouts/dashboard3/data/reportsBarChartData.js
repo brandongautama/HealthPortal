@@ -14,12 +14,6 @@ Coded by www.creative-tim.com
 */
 
 export default {
-  sales: {
-    labels: ["06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00"],
-    datasets: { label: "Mobile apps", data: [72, 80, 80, 78, 84, 90, 70, 72, 72] },
-  },
-  tasks: {
-    labels: ["Mon", "Tues", "Wed", "Thur", "Fri", "Sat", "Sun"],
-    datasets: { label: "Desktop apps", data: [72, 72, 72, 72, 73, 70, 74] },
-  },
+  labels: ["M", "T", "W", "T", "F", "S", "S"],
+  datasets: { label: "Sales", data: [50, 20, 10, 22, 50, 10, 40] },
 };

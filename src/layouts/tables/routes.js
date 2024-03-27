@@ -37,9 +37,12 @@ Coded by www.creative-tim.com
 
 // Material Dashboard 2 React layouts
 import Dashboard from "layouts/dashboard";
-import Dashboard1 from "layouts/dashboard1";
-import Dashboard2 from "layouts/dashboard2";
-import Dashboard3 from "layouts/dashboard3";
+import Tables from "layouts/tables";
+import Billing from "layouts/billing";
+import Notifications from "layouts/notifications";
+import Profile from "layouts/profile";
+import SignIn from "layouts/authentication/sign-in";
+import SignUp from "layouts/authentication/sign-up";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -47,43 +50,59 @@ import Icon from "@mui/material/Icon";
 const routes = [
   {
     type: "collapse",
-    name: "Patient A",
+    name: "Dashboard",
     key: "dashboard",
-    icon: <Icon fontSize="small">person</Icon>,
-    route: "/dashboard",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/tables",
     component: <Dashboard />,
   },
   {
     type: "collapse",
-    name: "Patient B",
+    name: "Dashboard",
     key: "tables",
-    icon: <Icon fontSize="small">person</Icon>,
+    icon: <Icon fontSize="small">table_view</Icon>,
     route: "/tables",
-    component: <Dashboard1 />,
+    component: <Tables />,
   },
   {
     type: "collapse",
-    name: "Patient C",
+    name: "Billing",
     key: "billing",
-    icon: <Icon fontSize="small">person</Icon>,
-    route: "/billing",
-    component: <Dashboard2 />,
+    icon: <Icon fontSize="small">receipt_long</Icon>,
+    route: "/tables",
+    component: <Billing />,
   },
   {
     type: "collapse",
-    name: "Patient D",
-    key: "sign-in",
-    icon: <Icon fontSize="small">person</Icon>,
-    route: "/authentication/sign-in",
-    component: <Dashboard3 />,
+    name: "Notifications",
+    key: "notifications",
+    icon: <Icon fontSize="small">notifications</Icon>,
+    route: "/notifications",
+    component: <Notifications />,
   },
   {
     type: "collapse",
-    name: "Patient E",
+    name: "Profile",
     key: "profile",
     icon: <Icon fontSize="small">person</Icon>,
     route: "/profile",
-    component: <Dashboard />,
+    component: <Profile />,
+  },
+  {
+    type: "collapse",
+    name: "Sign In",
+    key: "sign-in",
+    icon: <Icon fontSize="small">login</Icon>,
+    route: "/authentication/sign-in",
+    component: <SignIn />,
+  },
+  {
+    type: "collapse",
+    name: "Sign Up",
+    key: "sign-up",
+    icon: <Icon fontSize="small">assignment</Icon>,
+    route: "/authentication/sign-up",
+    component: <SignUp />,
   },
 ];
 
