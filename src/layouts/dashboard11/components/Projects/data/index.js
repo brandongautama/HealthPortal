@@ -82,12 +82,12 @@ export default function data() {
 
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            12
+            98
           </MDTypography>
         ),
         completion: (
           <MDBox width="20rem" textAlign="left">
-            <MDProgress value={12} color="info" variant="gradient" label={false} />
+            <MDProgress value={98} color="success" variant="gradient" label={false} />
           </MDBox>
         ),
       },
@@ -166,12 +166,12 @@ export default function data() {
 
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            92
+            40
           </MDTypography>
         ),
         completion: (
           <MDBox width="20rem" textAlign="left">
-            <MDProgress value={92} color="success" variant="gradient" label={false} />
+            <MDProgress value={40} color="info" variant="gradient" label={false} />
           </MDBox>
         ),
       },

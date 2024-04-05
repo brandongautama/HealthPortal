@@ -29,19 +29,19 @@ import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatist
 
 // Data
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
-import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
+import reportsLineChartData from "layouts/dashboard11/data/reportsLineChartData";
 
 // Dashboard components
-import Projects from "layouts/dashboard/components/Projects";
-import Projects1 from "layouts/dashboard/components/Projects1";
+import Projects from "layouts/dashboard11/components/Projects";
+import Projects1 from "layouts/dashboard11/components/Projects1";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
 
 function Dashboard() {
-  const { sales, task, sales1, sales2 } = reportsLineChartData;
+  const { sales, tasks, sales1, sales2 } = reportsLineChartData;
 
   return (
     <DashboardLayout>
-      <MDBox py={3}>
+      <MDBox py={0}>
         <Grid item xs={4} md={6} lg={8}>
           <MDBox mt={0.5}>
             <Grid container spacing={0}>
@@ -75,10 +75,10 @@ function Dashboard() {
             </Grid> */}
             </Grid>
           </MDBox>
-          <MDBox mt={1.5}>
+          <MDBox mt={0.5}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6} lg={12}>
-                <MDBox mb={3}>
+                <MDBox mb={0}>
                   <ReportsLineChart
                     color="success"
                     title="關波形"
@@ -94,10 +94,10 @@ function Dashboard() {
               </Grid>
             </Grid>
           </MDBox>
-          <MDBox mt={1.5}>
+          <MDBox mt={0.5}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6} lg={12}>
-                <MDBox mb={3}>
+                <MDBox mb={2}>
                   <ReportsLineChart
                     color="success"
                     title="尺波形"
