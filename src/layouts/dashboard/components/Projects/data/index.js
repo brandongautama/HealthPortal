@@ -72,8 +72,8 @@ export default function data() {
   return {
     columns: [
       { Header: "脈象", accessor: "companies", width: "25%", align: "left" },
-      { Header: "Probability (%)", accessor: "budget", align: "center" },
-      { Header: "Probability", accessor: "completion", align: "center" },
+      { Header: "Confidence Score (%)", accessor: "budget", align: "center" },
+      { Header: "Confidence Score", accessor: "completion", align: "center" },
     ],
 
     rows: [
